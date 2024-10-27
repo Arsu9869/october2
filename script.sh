@@ -1,6 +1,8 @@
 #!/bin/bash
 file="./name.txt"
+file2="./port.txt"
 i=$(cat $file)
+hostport=$(cat $file2)
 
 mkdir auto$i
 cd auto$i
@@ -11,7 +13,7 @@ cd october2
 docker build -t autoimage$i .
 
  
-hostport=400
+
 
 contport=80
 
@@ -20,8 +22,9 @@ echo "container autocont$i has been created"
 
 
 
-hostport=$((hostport+$i))
+hostport=$((hostport+$1))
 i=$((i+1))
 
-echo $i > $file
+
 echo $i > ../name.txt
+echo $hostport > ../port.txt
