@@ -28,5 +28,5 @@ i=$((i+1))
 echo $i > /name.txt
 echo $i > ../name.txt
 
-echo $i > port.txt
+echo $hostport > port.txt
 echo $hostport > ../port.txt
