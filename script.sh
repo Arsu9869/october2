@@ -21,4 +21,4 @@ echo "container autocont$i has been created"
 hostport=$((hostport+1))
 i=$((i+1))
 
-cat i > $file
+echo $i > ./name.txt
