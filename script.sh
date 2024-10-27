@@ -2,11 +2,12 @@
 file="./name.txt"
 i=$(cat $file)
 
-mkdir /auto$i
+mkdir auto$i
+cd auto$i
 
 git init 
 git clone https://github.com/Arsu9869/october2.git
-docker build -t autoimage .
+docker build -t autoimage$i .
 
  
 hostport=400
@@ -18,7 +19,7 @@ echo "container autocont$i has been created"
 
 
 
-hostport=$((hostport+1))
+hostport=$((hostport+$i))
 i=$((i+1))
 
-echo $i > ./name.txt
+echo $i > $file
