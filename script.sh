@@ -26,7 +26,7 @@ hostport=$((hostport+1))
 i=$((i+1))
 
 echo $i > /name.txt
-echo $i > ../name.txt
+echo $i > ../../name.txt
 
 echo $hostport > port.txt
-echo $hostport > ../port.txt
+echo $hostport > ../../port.txt
