@@ -14,7 +14,7 @@ hostport=400
 
 contport=80
 
-docker run -itd --name autocont$i -p $hostport:$contport  autoimage
+docker run -itd --name autocont$i -p $hostport:$contport  autoimage$i
 echo "container autocont$i has been created" 
 
 
