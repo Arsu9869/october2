@@ -25,6 +25,8 @@ echo "container autocont$i has been created"
 hostport=$((hostport+1))
 i=$((i+1))
 
-
+echo $i > /name.txt
 echo $i > ../name.txt
+
+echo $i > port.txt
 echo $hostport > ../port.txt
