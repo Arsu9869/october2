@@ -12,10 +12,10 @@ hostport=400
 
 contport=80
 
-docker run -itd --name autocont$i -p hostport:contport  autoimage
+docker run -itd --name autocont$i -p $hostport:$contport  autoimage
 echo "container autocont$i has been created" 
 
 
 
-((hostport++))
-((i++))
+hostport=$((hostport+1))
+i=$((i+1))
