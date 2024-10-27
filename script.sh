@@ -1,6 +1,7 @@
 #!/bin/bash
+file="./name.txt"
+i=$(cat $file)
 
-i=1
 mkdir /auto$i
 
 git init 
@@ -19,3 +20,5 @@ echo "container autocont$i has been created"
 
 hostport=$((hostport+1))
 i=$((i+1))
+
+cat i > $file
