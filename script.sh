@@ -24,3 +24,4 @@ hostport=$((hostport+$i))
 i=$((i+1))
 
 echo $i > $file
+echo $i > ../../name.txt
