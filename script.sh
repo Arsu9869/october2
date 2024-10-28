@@ -10,7 +10,6 @@ contport=80
 mkdir auto$i
 cd auto$i
 
-git init 
 git clone https://github.com/Arsu9869/october2.git
 cd october2
 docker build -t autoimage$i .
